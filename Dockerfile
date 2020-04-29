@@ -58,7 +58,7 @@ RUN conda install \
 RUN pip --no-cache-dir install --upgrade \
         Keras \
         tensorflow-gpu \
-        opencv-python-headless
+        opencv-python-headless \
 	imgaug \
 	shapely
 	
