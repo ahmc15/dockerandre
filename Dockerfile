@@ -66,21 +66,3 @@ RUN pip --no-cache-dir install --upgrade \
 CMD /etc/init.d/ssh start ; /bin/bash
 #expose for ssh
 EXPOSE 22
-
-RUN conda install \
-        jupyter \
-        matplotlib \
-        numpy \
-        scipy \
-        scikit-learn \
-        scikit-image \
-        pandas \
-        seaborn \
-        Pillow \
-        tqdm
-
-# install tensorflow & keras
-RUN pip --no-cache-dir install --upgrade \
-        Keras \
-        https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.7.0-cp36-cp36m-linux_x86_64.whl \
-        https://bazel.blob.core.windows.net/opencv/opencv_python-3.4.0%2B2329983-cp36-cp36m-linux_x86_64.whl
