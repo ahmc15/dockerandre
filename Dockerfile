@@ -60,7 +60,8 @@ RUN pip --no-cache-dir install --upgrade \
         tensorflow-gpu \
         opencv-python-headless \
 	imgaug \
-	shapely
+	shapely \
+	hydra-core --upgrade
 	
 #start ssh and terminal
 CMD /etc/init.d/ssh start ; /bin/bash
